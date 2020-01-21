@@ -96,6 +96,9 @@ function blob_fixup() {
         vendor/etc/msm_irqbalance.conf)
             sed -i "s/IGNORED_IRQ=19,21,38$/&,209,218/" "${2}"
             ;;
+        vendor/etc/qcril_database/upgrade/config/*)
+            sed -i '/persist.vendor.radio.poweron_opt/ s/1/0/g' "${2}"
+            ;;
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
             "${SIGSCAN}" -p "23 0B 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
