@@ -21,7 +21,6 @@ ro.odm.build.media_performance_class=30
 
 # Radio
 persist.vendor.radio.force_on_dc=true
-persist.vendor.radio.poweron_opt=1
 persist.vendor.radio.stack_id_1=1
 ro.sys.reserve.integrate=true
 ro.vendor.oplus.radio.project=2

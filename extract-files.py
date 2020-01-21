@@ -63,6 +63,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libsnapdragoncolor-manager.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/etc/qcril_database/upgrade/config/*.sql': blob_fixup()
+        .regex_replace('def_val="1" WHERE property="persist.vendor.radio.poweron_opt"', 'def_val="0" WHERE property="persist.vendor.radio.poweron_opt"'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
