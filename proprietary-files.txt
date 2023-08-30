@@ -1,13 +1,10 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 9 Pro (LE2121_14.0.0.600(EX01)).
+## from OnePlus Nord CE 3 Lite 5G (CPH2467_14.0.0.700(EX01)).
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.10.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.00.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
-vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ADSP
@@ -27,36 +24,23 @@ vendor/lib/rfsa/adsp/bm2n12.bin
 vendor/lib/rfsa/adsp/bm2n13.bin
 vendor/lib/rfsa/adsp/bm2n14.bin
 vendor/lib/rfsa/adsp/bm2n15.bin
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
-vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
-vendor/lib/rfsa/adsp/libVppAisQnnHtp.so
-vendor/lib/rfsa/adsp/libVppFrcQnnHtp.so
-vendor/lib/rfsa/adsp/libVppQnnHtp.so
 vendor/lib/rfsa/adsp/libadsp_jpege_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libbitml_nsp_skel.so
 vendor/lib/rfsa/adsp/libbitml_nsp_v2_skel.so
 vendor/lib/rfsa/adsp/libcamera_nn_skel.so
-vendor/lib/rfsa/adsp/libcvpdsp_2_1.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib/rfsa/adsp/libhdr_skel.so
 vendor/lib/rfsa/adsp/libmctfengine_skel.so
-vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so
-vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so
-vendor/lib/rfsa/adsp/libosie_skel.so
-vendor/lib/rfsa/adsp/libpmucount_skel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib/rfsa/adsp/libsuper_res_networks.so
-vendor/lib/rfsa/adsp/libvpp_ais_networks.so
-vendor/lib/rfsa/adsp/libvpt_action_recognition.so
-vendor/lib/rfsa/adsp/libworker_pool.so
+vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
+vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
@@ -128,7 +112,6 @@ vendor/lib64/libsdsprpc.so
 vendor/bin/init.qti.chg_policy.sh
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
-vendor/etc/charger_fw_fstab.qti
 
 # CNE
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink
@@ -200,9 +183,6 @@ vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # CVP
-vendor/etc/cvp/v2.0/facedetection/model1.dat
-vendor/etc/cvp/v2.1/facedetection/model2.dat
-vendor/lib64/libcvp2_1.so
 vendor/lib64/libcvp_common.so
 vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
@@ -218,8 +198,7 @@ vendor/lib64/vendor.qti.diaghal@1.0.so
 # Display (Features)
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
-vendor/etc/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm
-vendor/etc/Oplus_QC_LTM_Commercial_SM7325_2021_05_20.pfm
+vendor/etc/Oppo_QC_LTM_Commercial_SM8250_2020_01_15.pfm
 
 # Display (HDR)
 vendor/lib64/libhdr_tm.so
@@ -250,12 +229,14 @@ vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
 # Display calibration data
-vendor/etc/ltm_config_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml
-vendor/etc/ltm_config_samsung_amb670yf01_dsc_cmd_mode_panel.xml
-vendor/etc/ltm_config_samsung_ams662zs01_fhd_cmd_mode_dsc_dsi_panel.xml
-vendor/etc/qdcm_calib_data_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml
-vendor/etc/qdcm_calib_data_samsung_amb670yf01_dsc_cmd_mode_panel.xml
-vendor/etc/qdcm_calib_data_samsung_ams662zs01_fhd_cmd_mode_dsc_dsi_panel.xml
+vendor/etc/qdcm_calib_data_dsjm_ili7807s_21707_fhd_plus_mipi_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_ili7807s_tm_fhd_plus_video_mode_dsi_panel.xml
+vendor/etc/qdcm_calib_data_ili7807s_video_mode_dsi_fhd_panel.xml
+vendor/etc/qdcm_calib_data_jdi_td4377_21707_fhd_plus_mipi_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_nt36672c_dsjm_fhd_plus_video_mode_dsi_panel.xml
+vendor/etc/qdcm_calib_data_nt36672c_tm_fhd_plus_video_mode_dsi_panel.xml
+vendor/etc/qdcm_calib_data_nt36672c_video_mode_dsi_fhd_1080_panel.xml
+vendor/etc/qdcm_calib_data_nt36672c_video_mode_dsi_fhd_panel.xml
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
@@ -309,7 +290,6 @@ vendor/lib64/libdrmtime.so
 vendor/lib64/libops.so
 vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
-vendor/lib64/libspl.so
 vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
@@ -442,8 +422,8 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 # Hotword Enrollment
 my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml
 my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
-my_product/priv-app/HotwordEnrollmentOKGoogle.apk:product/priv-app/HotwordEnrollmentOKGoogle/HotwordEnrollmentOKGoogle.apk
-my_product/priv-app/HotwordEnrollmentXGoogle.apk:product/priv-app/HotwordEnrollmentXGoogle/HotwordEnrollmentXGoogle.apk
+my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
+my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
 
 # IMS - from renoir - 22.5.11
 system_ext/app/ImsRcsService/ImsRcsService.apk|d03d3142f3518e755d02ace26b17170218ed8b4b
@@ -526,6 +506,8 @@ vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf
 
 # Kernel
+vendor/bin/init.kernel.post_boot-blair.sh
+vendor/bin/init.kernel.post_boot-holi.sh
 vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/vendor_modprobe.sh
@@ -551,12 +533,7 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 
 # Media
-odm/lib/libaiboost_qnn_sr.so
-odm/lib/libaiboost_sr.so
-odm/lib/libaiboost_ubwc.so
-odm/lib/liboplusvppfilter.so
-odm/lib/libosie_process.so
-odm/lib/libosie_stub.so
+odm/etc/media_profiles_V1_0.xml
 system_ext/lib/libmmosal.so
 system_ext/lib/libmmparser_lite.so
 system_ext/lib64/libmmosal.so
@@ -564,27 +541,28 @@ vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/init.qti.media.sh
 vendor/etc/init/init.qti.media.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
-vendor/etc/media/video_system_specs.json
-vendor/etc/media_lahaina/video_system_specs.json
-vendor/etc/media_yupik_v1/video_system_specs.json
+vendor/etc/video_system_specs.json
+vendor/etc/media_blair/video_system_specs.json
+vendor/etc/media_blair/video_system_specs.json
+vendor/etc/media_blair_lite/video_system_specs.json
+vendor/etc/media_holi/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_lahaina.xml
-vendor/etc/media_codecs_lahaina_vendor.xml
+vendor/etc/media_codecs_blair.xml
+vendor/etc/media_codecs_blair_lite.xml
+vendor/etc/media_codecs_holi.xml
 vendor/etc/media_codecs_performance.xml
-vendor/etc/media_codecs_performance_lahaina.xml
-vendor/etc/media_codecs_performance_lahaina_vendor.xml
-vendor/etc/media_codecs_performance_yupik_v1.xml
-vendor/etc/media_codecs_yupik_v1.xml
+vendor/etc/media_codecs_performance_blair.xml
+vendor/etc/media_codecs_performance_blair_lite.xml
+vendor/etc/media_codecs_performance_holi.xml
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
-vendor/etc/media_profiles_lahaina.xml
-vendor/etc/media_profiles_lahaina_vendor.xml
-vendor/etc/media_profiles_yupik_v1.xml
-vendor/etc/video_system_specs.json
-vendor/lib/libqc2vppfilter.so
+vendor/etc/media_profiles_blair.xml
+vendor/etc/media_profiles_blair_lite.xml
+vendor/etc/media_profiles_holi.xml
+vendor/etc/media_profiles_vendor.xml
 vendor/lib/libqcodec2_base.so
 vendor/lib/libqcodec2_basecodec.so
 vendor/lib/libqcodec2_core.so
@@ -639,12 +617,11 @@ vendor/lib64/libOmxWmaDec.so
 vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
-vendor/lib64/libspcom.so
 
 # Perf
 odm/lib64/liboplus-uah-client.so
 odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so|6b0adbbb2583f9601d36a3012a4dc41bc686d270
+odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
@@ -673,23 +650,16 @@ vendor/lib64/libqti-utils.so
 vendor/lib64/libskewknob.so
 
 # Perf LM
-vendor/etc/lm/prekill/prekill_2GB.data
-vendor/etc/lm/prekill/prekill_4GB.data
-vendor/etc/lm/prekill/prekill_6GB.data
 vendor/etc/lm/AdaptLaunchFeature.xml
 vendor/etc/lm/AppClassifierFeature.xml
 vendor/etc/lm/GameOptimizationFeature.xml
-vendor/etc/lm/PreKillFeature.xml
-vendor/etc/lm/gPLAFFeature.xml
 vendor/etc/lm/sPLHFeature.xml
 vendor/lib64/libadaptlaunch.so
 vendor/lib64/libappclassifier.so
 vendor/lib64/libgameoptfeature.so
-vendor/lib64/libgplaf.so
 vendor/lib64/liblmutils-ns.so
 vendor/lib64/libmemperfd.so
 vendor/lib64/libmeters-ns.so
-vendor/lib64/libprekill.so
 vendor/lib64/libqti-iopd-client.so
 vendor/lib64/libqti-iopd.so
 vendor/lib64/libsplh.so
@@ -781,13 +751,7 @@ vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 
 # RIL
-odm/lib64/lib-virtual-modem-protos.so
-odm/lib64/libcommcenterfw.so
-odm/lib64/libcommcenterutils.so
-odm/lib64/libdmtp-protos-lite.so
-odm/lib64/libdmtpclient.so
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
-odm/lib64/vendor.oplus.hardware.communicationcenter_compat@1.0.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.radio@1.0.so
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
@@ -826,6 +790,8 @@ vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/qcril_database/upgrade/config/10.0_config.sql
 vendor/etc/qcril_database/upgrade/config/11.0_config.sql
 vendor/etc/qcril_database/upgrade/config/12.0_config.sql
+vendor/etc/qcril_database/upgrade/config/13.0_config.sql
+vendor/etc/qcril_database/upgrade/config/14.0_config.sql
 vendor/etc/qcril_database/upgrade/config/6.0_config.sql
 vendor/etc/qcril_database/upgrade/config/7.0_config.sql
 vendor/etc/qcril_database/upgrade/config/8.0_config.sql
@@ -867,6 +833,7 @@ vendor/lib64/libqcrilNrLogger.so
 vendor/lib64/libqcrilNrQtiBus.so
 vendor/lib64/libqcrilNrQtiMutex.so
 vendor/lib64/libqcrildatactl.so
+vendor/lib64/libqcrildataqos.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqrtrclient.so
 vendor/lib64/libqsocket.so
@@ -880,7 +847,7 @@ vendor/lib64/qcrilMarshal.so
 vendor/lib64/qcrild_libqcrilnrutils.so
 vendor/lib64/qtiril-utils.so
 vendor/lib64/qtiwakelock.so
-vendor/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so
+vendor/lib64/vendor.oplus.hardware.radio-V2-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
@@ -917,43 +884,17 @@ vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
-vendor/etc/sensors/config/faroe_ak991x_0.json
-vendor/etc/sensors/config/faroe_bu52053nvx_0.json
-vendor/etc/sensors/config/faroe_default_sensors.json
-vendor/etc/sensors/config/faroe_dynamic_sensors.json
-vendor/etc/sensors/config/faroe_idp_ak991x_0.json
-vendor/etc/sensors/config/faroe_idp_lsm6dst_0.json
-vendor/etc/sensors/config/faroe_idp_lsm6dst_1.json
-vendor/etc/sensors/config/faroe_irq.json
-vendor/etc/sensors/config/faroe_lps22hh_0.json
-vendor/etc/sensors/config/faroe_lsm6dst_0.json
-vendor/etc/sensors/config/faroe_lsm6dst_1.json
-vendor/etc/sensors/config/faroe_power_0.json
-vendor/etc/sensors/config/faroe_qrd_ak991x_0.json
-vendor/etc/sensors/config/faroe_qrd_lsm6dst_0.json
-vendor/etc/sensors/config/faroe_qrd_sx932x_0.json
-vendor/etc/sensors/config/faroe_qrd_tmd3702_0.json
-vendor/etc/sensors/config/faroe_sx932x_0.json
-vendor/etc/sensors/config/faroe_tmd3702_0.json
-vendor/etc/sensors/config/faroe_vertigo_ak991x_0.json
-vendor/etc/sensors/config/faroe_vertigo_lsm6dst_0.json
-vendor/etc/sensors/config/faroe_vertigo_lsm6dst_1.json
-vendor/etc/sensors/config/kodiak_qrd_ak991x_0.json
-vendor/etc/sensors/config/kodiak_qrd_ak991x_1.json
-vendor/etc/sensors/config/kodiak_tmd3702_0.json
-vendor/etc/sensors/config/lahaina_default_sensors.json
-vendor/etc/sensors/config/lahaina_dynamic_sensors.json
-vendor/etc/sensors/config/lahaina_hdk_ak991x_0.json
-vendor/etc/sensors/config/lahaina_hdk_lsm6dst_0.json
-vendor/etc/sensors/config/lahaina_hdk_lsm6dst_1.json
-vendor/etc/sensors/config/lahaina_hdk_sx932x_0.json
-vendor/etc/sensors/config/lahaina_hdk_tmd2725_0.json
-vendor/etc/sensors/config/lahaina_hhg_ak991x_0.json
-vendor/etc/sensors/config/lahaina_hhg_lsm6dst_0.json
-vendor/etc/sensors/config/lahaina_hhg_sx9302x_0.json
-vendor/etc/sensors/config/lahaina_hhg_tmd3702_0.json
-vendor/etc/sensors/config/lahaina_irq.json
-vendor/etc/sensors/config/lahaina_power_0.json
+vendor/etc/sensors/config/holi_ak991x_0.json
+vendor/etc/sensors/config/holi_bu52053nvx_0.json
+vendor/etc/sensors/config/holi_default_sensors.json
+vendor/etc/sensors/config/holi_dynamic_sensors.json
+vendor/etc/sensors/config/holi_icp101xx_0.json
+vendor/etc/sensors/config/holi_lsm6dst_0.json
+vendor/etc/sensors/config/holi_power_0.json
+vendor/etc/sensors/config/holi_qrd_ak991x_0.json
+vendor/etc/sensors/config/holi_qrd_lsm6dst_0.json
+vendor/etc/sensors/config/holi_qrd_tmd2725.json
+vendor/etc/sensors/config/holi_tmd2725.json
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_amd_sw_disabled.json
 vendor/etc/sensors/config/sns_amd_sw_enabled.json
@@ -989,6 +930,18 @@ vendor/etc/sensors/config/sns_tilt_sw_disabled.json
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sns_wrist_pedo.json
+vendor/etc/sensors/config/strait_ak991x_0.json
+vendor/etc/sensors/config/strait_bu52053nvx_0.json
+vendor/etc/sensors/config/strait_default_sensors.json
+vendor/etc/sensors/config/strait_dynamic_sensors.json
+vendor/etc/sensors/config/strait_icp101xx_0.json
+vendor/etc/sensors/config/strait_lsm6dst_0.json
+vendor/etc/sensors/config/strait_power_0.json
+vendor/etc/sensors/config/strait_qrd_ak991x_0.json
+vendor/etc/sensors/config/strait_qrd_lsm6dst_0.json
+vendor/etc/sensors/config/strait_qrd_tmd2725.json
+vendor/etc/sensors/config/strait_tmd2725.json
+vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
 vendor/lib64/libsensorcal.so
@@ -1041,56 +994,137 @@ vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
 # Touchscreen firmware
-odm/firmware/tp/19815/FW_S3908_SAMSUNG.img
-odm/firmware/tp/19815/FW_S3908_SAMSUNG_FAE.img
-odm/firmware/tp/19815/LIMIT_S3908_SAMSUNG.img
-odm/firmware/tp/19825/FW_S6SY792_SAMSUNG.bin
-odm/firmware/tp/19825/FW_S6SY792_SAMSUNG_FAE.bin
-odm/firmware/tp/19825/LIMIT_S6SY792_SAMSUNG.img
-odm/firmware/tp/20031/FW_S3908_SAMSUNG.img
-odm/firmware/tp/20031/FW_S3908_SAMSUNG_FAE.img
-odm/firmware/tp/20031/LIMIT_S3908_SAMSUNG.img
-odm/firmware/tp/20085/FW_S3908_BOE.img
-odm/firmware/tp/20085/FW_S3908_BOE_FAE.img
-odm/firmware/tp/20085/FW_ST80Y_SAMSUNG.img
-odm/firmware/tp/20085/FW_ST80Y_SAMSUNG_FAE.img
-odm/firmware/tp/20085/LIMIT_S3908_BOE.img
-odm/firmware/tp/20085/LIMIT_ST80Y_SAMSUNG.img
-odm/firmware/tp/20085/LIMIT_ST80Y_SAMSUNG_AGING.img
-odm/firmware/tp/20627/FW_FT3518_SAMSUNG.img
-odm/firmware/tp/20627/FW_FT3518_SAMSUNG_FAE.img
-odm/firmware/tp/20627/LIMIT_FT3518_SAMSUNG.img
-odm/firmware/tp/20659/FW_S6SY792_SAMSUNG.bin
-odm/firmware/tp/20659/FW_S6SY792_SAMSUNG_FAE.bin
-odm/firmware/tp/20659/LIMIT_S6SY792_SAMSUNG.img
-odm/firmware/tp/20820/FW_S3908_SAMSUNG.img
-odm/firmware/tp/20820/FW_S3908_SAMSUNG_FAE.img
-odm/firmware/tp/20820/LIMIT_S3908_SAMSUNG.img
-odm/firmware/tp/21005/FW_S3908_BOE.img
-odm/firmware/tp/21005/FW_S3908_BOE_FAE.img
-odm/firmware/tp/21005/FW_S3908_SAMSUNG.img
-odm/firmware/tp/21005/FW_S3908_SAMSUNG_FAE.img
-odm/firmware/tp/21005/LIMIT_S3908_BOE.img
-odm/firmware/tp/21005/LIMIT_S3908_BOE_AGING.img
-odm/firmware/tp/21005/LIMIT_S3908_SAMSUNG.img
-odm/firmware/tp/21005/LIMIT_S3908_SAMSUNG_AGING.img
-odm/firmware/tp/21031/FW_FT3518_SAMSUNG.img
-odm/firmware/tp/21031/FW_FT3518_SAMSUNG_FAE.img
-odm/firmware/tp/21031/LIMIT_FT3518_SAMSUNG.img
-odm/firmware/tp/21051/FW_S3908_SAMSUNG.img
-odm/firmware/tp/21051/FW_S3908_SAMSUNG_FAE.img
-odm/firmware/tp/21051/LIMIT_S3908_SAMSUNG.img
-odm/firmware/tp/21075/FW_NF_ILI7807S_BOE_FAE.img
-odm/firmware/tp/21075/FW_NF_ILI7807S_DSJM.img
-odm/firmware/tp/21075/FW_NF_ILI7807S_DSJM_FAE.img
-odm/firmware/tp/21075/LIMIT_NF_ILI7807S_BOE.img
-odm/firmware/tp/21075/LIMIT_NF_ILI7807S_DSJM.img
-odm/firmware/tp/21147/FW_FT3658U_SAMSUNG.img
-odm/firmware/tp/21147/FW_FT3658U_SAMSUNG_FAE.img
-odm/firmware/tp/21147/LIMIT_FT3658U_SAMSUNG.img
-odm/firmware/tp/21617/FW_FT3658U_SAMSUNG.img
-odm/firmware/tp/21617/FW_FT3658U_SAMSUNG_FAE.img
-odm/firmware/tp/21617/LIMIT_FT3658U_SAMSUNG.img
+odm/firmware/tp/20121/FW_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/20121/FW_NF_ILI7807S_TIANMA_FAE.img
+odm/firmware/tp/20121/FW_NF_NT36672C_DSJM.img
+odm/firmware/tp/20121/FW_NF_NT36672C_DSJM_FAE.img
+odm/firmware/tp/20121/FW_NF_NT36672C_DSJM_TEST.bin
+odm/firmware/tp/20121/FW_NF_NT36672C_TIANMA.img
+odm/firmware/tp/20121/FW_NF_NT36672C_TIANMA_FAE.img
+odm/firmware/tp/20121/FW_NF_NT36672C_TIANMA_TEST.bin
+odm/firmware/tp/20121/LIMIT_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/20121/LIMIT_NF_NT36672C_DSJM.img
+odm/firmware/tp/20121/LIMIT_NF_NT36672C_TIANMA.img
+odm/firmware/tp/21039/FW_NF_NT36672C_TIANMA.img
+odm/firmware/tp/21039/FW_NF_NT36672C_TIANMA_FAE.img
+odm/firmware/tp/21039/FW_NF_NT36672C_TIANMA_TEST.bin
+odm/firmware/tp/21039/LIMIT_NF_NT36672C_TIANMA.img
+odm/firmware/tp/21095/FW_FT3518_SAMSUNG.img
+odm/firmware/tp/21095/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/21095/FW_GT9886_SAMSUNG.img
+odm/firmware/tp/21095/FW_GT9886_SAMSUNG_FAE.img
+odm/firmware/tp/21095/LIMIT_FT3518_SAMSUNG.img
+odm/firmware/tp/21095/LIMIT_FT3518_SAMSUNG_AGING.img
+odm/firmware/tp/21095/LIMIT_GT9886_SAMSUNG.img
+odm/firmware/tp/21221/FW_FT3518_SAMSUNG.img
+odm/firmware/tp/21221/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/21221/LIMIT_FT3518_SAMSUNG.img
+odm/firmware/tp/21291/FW_FT3518_SAMSUNG.img
+odm/firmware/tp/21291/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/21291/LIMIT_FT3518_SAMSUNG.img
+odm/firmware/tp/21291/LIMIT_FT3518_SAMSUNG_AGING.img
+odm/firmware/tp/21341/FW_NF_ILI7807S_DSJM.img
+odm/firmware/tp/21341/FW_NF_ILI7807S_DSJM_FAE.img
+odm/firmware/tp/21341/LIMIT_NF_ILI7807S_DSJM.img
+odm/firmware/tp/21629/FW_NF_ILI7807S_DSJM.img
+odm/firmware/tp/21629/FW_NF_ILI7807S_DSJM_FAE.img
+odm/firmware/tp/21629/LIMIT_NF_ILI7807S_DSJM.ini
+odm/firmware/tp/2162B/FW_NF_ILI7807S_DSJM.img
+odm/firmware/tp/2162B/FW_NF_ILI7807S_DSJM_FAE.img
+odm/firmware/tp/2162B/LIMIT_NF_ILI7807S_DSJM.ini
+odm/firmware/tp/21653/FW_NT36523_BOE_TEST.bin
+odm/firmware/tp/21653/LIMIT_NT36523_BOE.img
+odm/firmware/tp/216E9/FW_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/216E9/FW_NF_ILI7807S_TIANMA_FAE.img
+odm/firmware/tp/216E9/FW_NF_NT36672C_DSJM.img
+odm/firmware/tp/216E9/FW_NF_NT36672C_DSJM_FAE.img
+odm/firmware/tp/216E9/FW_NF_NT36672C_DSJM_TEST.bin
+odm/firmware/tp/216E9/FW_NF_NT36672C_TIANMA.img
+odm/firmware/tp/216E9/FW_NF_NT36672C_TIANMA_FAE.img
+odm/firmware/tp/216E9/FW_NF_NT36672C_TIANMA_TEST.bin
+odm/firmware/tp/216E9/LIMIT_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/216E9/LIMIT_NF_NT36672C_DSJM.img
+odm/firmware/tp/216E9/LIMIT_NF_NT36672C_TIANMA.img
+odm/firmware/tp/216EA/FW_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/216EA/FW_NF_ILI7807S_TIANMA_FAE.img
+odm/firmware/tp/216EA/FW_NF_NT36672C_DSJM.img
+odm/firmware/tp/216EA/FW_NF_NT36672C_DSJM_FAE.img
+odm/firmware/tp/216EA/FW_NF_NT36672C_DSJM_TEST.bin
+odm/firmware/tp/216EA/FW_NF_NT36672C_TIANMA.img
+odm/firmware/tp/216EA/FW_NF_NT36672C_TIANMA_FAE.img
+odm/firmware/tp/216EA/FW_NF_NT36672C_TIANMA_TEST.bin
+odm/firmware/tp/216EA/LIMIT_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/216EA/LIMIT_NF_NT36672C_DSJM.img
+odm/firmware/tp/216EA/LIMIT_NF_NT36672C_TIANMA.img
+odm/firmware/tp/21707/FW_NF_ILI7807S_DSJM.img
+odm/firmware/tp/21707/FW_NF_ILI7807S_DSJM_FAE.img
+odm/firmware/tp/21707/FW_NF_TD4377_DSJM.img
+odm/firmware/tp/21707/FW_NF_TD4377_DSJM_FAE.img
+odm/firmware/tp/21707/LIMIT_NF_ILI7807S_DSJM.img
+odm/firmware/tp/21707/LIMIT_NF_TD4377_DSJM.img
+odm/firmware/tp/21708/FW_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/21708/FW_NF_ILI7807S_TIANMA_FAE.img
+odm/firmware/tp/21708/FW_NF_NT36672C_DSJM.img
+odm/firmware/tp/21708/FW_NF_NT36672C_DSJM_FAE.img
+odm/firmware/tp/21708/FW_NF_NT36672C_DSJM_TEST.bin
+odm/firmware/tp/21708/FW_NF_NT36672C_TIANMA.img
+odm/firmware/tp/21708/FW_NF_NT36672C_TIANMA_FAE.img
+odm/firmware/tp/21708/FW_NF_NT36672C_TIANMA_TEST.bin
+odm/firmware/tp/21708/LIMIT_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/21708/LIMIT_NF_NT36672C_DSJM.img
+odm/firmware/tp/21708/LIMIT_NF_NT36672C_TIANMA.img
+odm/firmware/tp/22035/FW_FT3681_BOE.img
+odm/firmware/tp/22035/FW_FT3681_BOE_FAE.img
+odm/firmware/tp/22035/FW_FT3681_BOE_sys_edge_touch_config.img
+odm/firmware/tp/22035/FW_FT3681_VXN.img
+odm/firmware/tp/22035/FW_FT3681_VXN_FAE.img
+odm/firmware/tp/22035/FW_S3910_TIANMA.img
+odm/firmware/tp/22035/FW_S3910_TIANMA_FAE.img
+odm/firmware/tp/22035/FW_S3910_TIANMA_sys_edge_touch_config.img
+odm/firmware/tp/22035/LIMIT_FT3681_BOE.img
+odm/firmware/tp/22035/LIMIT_FT3681_VXN.img
+odm/firmware/tp/22035/LIMIT_S3910_TIANMA.img
+odm/firmware/tp/22041/FW_FT3518_SAMSUNG.img
+odm/firmware/tp/22041/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/22041/FW_GT9886_SAMSUNG.img
+odm/firmware/tp/22041/FW_GT9886_SAMSUNG_FAE.img
+odm/firmware/tp/22041/LIMIT_FT3518_SAMSUNG.img
+odm/firmware/tp/22041/LIMIT_FT3518_SAMSUNG_AGING.img
+odm/firmware/tp/22041/LIMIT_GT9886_SAMSUNG.img
+odm/firmware/tp/22045/FW_NF_ILI7807S_JDI.img
+odm/firmware/tp/22045/FW_NF_ILI7807S_JDI_FAE.img
+odm/firmware/tp/22045/FW_NF_NT36672C_TIANMA.img
+odm/firmware/tp/22045/FW_NF_NT36672C_TIANMA_FAE.img
+odm/firmware/tp/22045/FW_NF_NT36672C_TIANMA_TEST.bin
+odm/firmware/tp/22045/LIMIT_NF_ILI7807S_JDI.img
+odm/firmware/tp/22045/LIMIT_NF_NT36672C_TIANMA.img
+odm/firmware/tp/22241/FW_FT3518_SAMSUNG.img
+odm/firmware/tp/22241/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/22241/FW_GT9886_SAMSUNG.img
+odm/firmware/tp/22241/FW_GT9886_SAMSUNG_FAE.img
+odm/firmware/tp/22241/LIMIT_FT3518_SAMSUNG.img
+odm/firmware/tp/22241/LIMIT_FT3518_SAMSUNG_AGING.img
+odm/firmware/tp/22241/LIMIT_GT9886_SAMSUNG.img
+odm/firmware/tp/22273/FW_FT3518_SAMSUNG.img
+odm/firmware/tp/22273/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/22273/LIMIT_FT3518_SAMSUNG.img
+odm/firmware/tp/22273/LIMIT_FT3518_SAMSUNG_AGING.img
+odm/firmware/tp/22601/FW_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22601/FW_NF_ILI7807S_HUAXING_FAE.img
+odm/firmware/tp/22601/LIMIT_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22602/FW_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22602/FW_NF_ILI7807S_HUAXING_FAE.img
+odm/firmware/tp/22602/LIMIT_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22667/FW_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22667/FW_NF_ILI7807S_HUAXING_FAE.img
+odm/firmware/tp/22667/LIMIT_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22668/FW_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22668/FW_NF_ILI7807S_HUAXING_FAE.img
+odm/firmware/tp/22668/LIMIT_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22821/FW_NF_NT36672C_TIANMA.img
+odm/firmware/tp/22821/FW_NF_NT36672C_TIANMA_FAE.img
+odm/firmware/tp/22821/FW_NF_NT36672C_TIANMA_TEST.bin
+odm/firmware/tp/22821/LIMIT_NF_NT36672C_TIANMA.img
 
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
@@ -1108,20 +1142,6 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # VPP
-vendor/bin/hw/qconfigservice
-vendor/bin/vppservice
-vendor/etc/configstore/vpp.configstore.xml
-vendor/etc/init/qconfig.rc
-vendor/etc/init/vppservice.rc
-vendor/etc/qconfigpresets.json
-vendor/lib/libqconfigclient.so
-vendor/lib/vendor.qti.hardware.qconfig@1.0.so
-vendor/lib/vendor.qti.hardware.vpp@2.0.so
-vendor/lib64/libqconfigclient.so
-vendor/lib64/libvpphcp.so
-vendor/lib64/libvpphvx.so
-vendor/lib64/libvpplibrary.so
-vendor/lib64/vendor.qti.hardware.qconfig@1.0.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
@@ -1134,60 +1154,58 @@ odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 odm/lib64/mediadrm/libwvdrmengine.so
 odm/lib64/liboemcrypto.so
 odm/lib64/libwvhidl.so
-vendor/etc/oplus_Widevine_licenses.pfm
 vendor/lib64/libtrustedapploader.so
 
 # WiFi
 vendor/bin/cnss-daemon
-vendor/etc/init/init.vendor.wlan.rc
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
-# WiFi Display (system) - from LE2121 14.0.0.210(EX01)
-system/framework/WfdCommon.jar|a661c494d064b79a3f71579592411fada1ea232f
-system_ext/bin/wfdservice|400d123df78c1ed2e9643ff3ddf5ee5748f954fe
-system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
-system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml|10dcd4e58f0652d800d48ae5b76e4fab43fda214
-system_ext/etc/seccomp_policy/wfdservice.policy|5b3592c965f16b2d55ac89d56d8d3c49a6b5800b
-system_ext/etc/wfdconfigsink.xml|cb78df66948314a75080a4161321fb3111a0785a
-system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so|cb88bc73bf9f44d7da000a41d38b309ffdf71370
-system_ext/lib/libmmrtpdecoder.so|4fc76315f11ff5fe416f36b66c9422ef05eae182
-system_ext/lib/libmmrtpencoder.so|0fa2096eec29eec395f6bd88d7d1049a127e090c
-system_ext/lib/libwfdavenhancements.so|581db496334d2adb76e6c6af67620f49ca24eabd
-system_ext/lib/libwfdclient.so|a9639d9f269880700bac6fc06e8302702fb0ab32
-system_ext/lib/libwfdcommonutils.so|b738182e77f3e7faf72460f09ebdfca7de5e0c23
-system_ext/lib/libwfdconfigutils.so|a52a96e2699f3a5ad79838e356cd90838e26218b
-system_ext/lib/libwfddisplayconfig.so|f46fe63fb3d58c143dc92741a962167af3d8b928
-system_ext/lib/libwfdmminterface.so|5844114d7cc823090a70fe4f44cbda0ddf585ebd
-system_ext/lib/libwfdmmsink.so|23fb5c836fc06865b229c30b46998e41c0624dac
-system_ext/lib/libwfdmmsrc_system.so|0adfc69a5560158f3a6803ba720acc795d6d05dc
-system_ext/lib/libwfdrtsp.so|afd69963c2bd59bdb3ff23e01710c61ed90c5d87
-system_ext/lib/libwfdservice.so|07e6d0e00393a8c068f75b46531d2e75fdaebde2
-system_ext/lib/libwfdsinksm.so|875171cc6ae534dd941eec1c87b78d5961e19c06
-system_ext/lib/libwfduibcinterface.so|e90fa4920b010bd6ef2bd78c2d2644cbd0fcbffa
-system_ext/lib/libwfduibcsink.so|91af548471c395a958e6155dd9be19cccbe482d3
-system_ext/lib/libwfduibcsinkinterface.so|bc0e7dca28d1e5cbc6caf5bd5378f3e6db3b460c
-system_ext/lib/libwfduibcsrc.so|a0b1c73015c449468db0d2776fdfcc56dfeee53b
-system_ext/lib/libwfduibcsrcinterface.so|2e24ec6a075407664488b4214eef35cb2ca845f4
-system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|45a0a8cd9f1aa5cbe69b113192d42bc42e32e9c3
-system_ext/lib64/libmmparser_lite.so|59d550a52773722f1fe515bd5fba86918cf6f54e
-system_ext/lib64/libmmrtpdecoder.so|0da526d51135ea58236ab6bcc2d1b7484931df24
-system_ext/lib64/libmmrtpencoder.so|fafe00d1ed3d691c6d2c2d963144218764cad5ae
-system_ext/lib64/libwfdclient.so|0070b1e88cee6ebaf17dcb02c2706232cc087071
-system_ext/lib64/libwfdcommonutils.so|14b3bd86703f2aca0abb1232d2304e626c1af644
-system_ext/lib64/libwfdconfigutils.so|6f1a3a862ddde4245ea58ad310101df620d3a00b
-system_ext/lib64/libwfddisplayconfig.so|5fd7bf7abaedfe890442f88183c49755b25c39aa
-system_ext/lib64/libwfdmminterface.so|3f16acefbe87741a5841c1c70cf74ff917299c4c
-system_ext/lib64/libwfdmmsink.so|8150b750357b606475521b491f78d566673f9888
-system_ext/lib64/libwfdnative.so|6d6dad5e631bc4d63463f608c47f3f9e5493944f|e7e24b54bfa2e3d4a4037fed085eaee49caeb3ac
-system_ext/lib64/libwfdrtsp.so|8181e44d7c1f722218fabd8fe3bf788454a3f586
-system_ext/lib64/libwfdsinksm.so|c4d68ecbe0accd24296c18444e5a82b6a24be8d8
-system_ext/lib64/libwfduibcinterface.so|dca32fe063bdba7ce3b131b16cf112b793ae03ad
-system_ext/lib64/libwfduibcsink.so|63ea93b1a6aec75a294baf50007270807a819e21
-system_ext/lib64/libwfduibcsinkinterface.so|39c123bd9a4d7a8fa317f8ed4d86972dcfab0423
-system_ext/lib64/libwfduibcsrc.so|5557f3bd58c37b7e3b28e13f2f86d55930b14ab6
-system_ext/lib64/libwfduibcsrcinterface.so|77cead9bf7b60384fe1e11dc2b25bd99af0b4608
-system_ext/priv-app/WfdService/WfdService.apk|7191da7d336f6018ee292af4e69167677b9f5bd1
+# WiFi Display (system)
+system/framework/WfdCommon.jar
+system_ext/bin/wfdservice
+system_ext/etc/init/wfdservice.rc
+system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
+system_ext/etc/seccomp_policy/wfdservice.policy
+system_ext/etc/wfdconfigsink.xml
+system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
+system_ext/lib/libmmrtpdecoder.so
+system_ext/lib/libmmrtpencoder.so
+system_ext/lib/libwfdavenhancements.so
+system_ext/lib/libwfdclient.so
+system_ext/lib/libwfdcommonutils.so
+system_ext/lib/libwfdconfigutils.so
+system_ext/lib/libwfddisplayconfig.so
+system_ext/lib/libwfdmminterface.so
+system_ext/lib/libwfdmmsink.so
+system_ext/lib/libwfdmmsrc_system.so
+system_ext/lib/libwfdrtsp.so
+system_ext/lib/libwfdservice.so
+system_ext/lib/libwfdsinksm.so
+system_ext/lib/libwfduibcinterface.so
+system_ext/lib/libwfduibcsink.so
+system_ext/lib/libwfduibcsinkinterface.so
+system_ext/lib/libwfduibcsrc.so
+system_ext/lib/libwfduibcsrcinterface.so
+system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
+system_ext/lib64/libmmparser_lite.so
+system_ext/lib64/libmmrtpdecoder.so
+system_ext/lib64/libmmrtpencoder.so
+system_ext/lib64/libwfdclient.so
+system_ext/lib64/libwfdcommonutils.so
+system_ext/lib64/libwfdconfigutils.so
+system_ext/lib64/libwfddisplayconfig.so
+system_ext/lib64/libwfdmminterface.so
+system_ext/lib64/libwfdmmsink.so
+system_ext/lib64/libwfdnative.so
+system_ext/lib64/libwfdrtsp.so
+system_ext/lib64/libwfdsinksm.so
+system_ext/lib64/libwfduibcinterface.so
+system_ext/lib64/libwfduibcsink.so
+system_ext/lib64/libwfduibcsinkinterface.so
+system_ext/lib64/libwfduibcsrc.so
+system_ext/lib64/libwfduibcsrcinterface.so
+system_ext/priv-app/WfdService/WfdService.apk
 
 # WiFi Display (vendor)
 vendor/bin/wfdhdcphalservice

@@ -233,8 +233,6 @@ PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.vendor_ramdisk \
     init.class_main.sh \
-    init.kernel.post_boot-lahaina.sh \
-    init.kernel.post_boot-yupik.sh \
     init.oplus.hw.rc \
     init.oplus.hw.rc.recovery \
     init.oplus.rc \
@@ -345,9 +343,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.oplus-multihal \
     libsensorndkbridge \
     sensors.oplus
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
