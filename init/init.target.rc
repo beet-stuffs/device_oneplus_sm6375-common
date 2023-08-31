@@ -119,7 +119,7 @@ on boot
     setprop vendor.usb.rmnet.inst.name "rmnet"
     setprop vendor.usb.dpl.inst.name "dpl"
     setprop vendor.usb.qdss.inst.name "qdss_mdm"
-    setprop vendor.usb.controller a600000.dwc3
+    setprop vendor.usb.controller 4e00000.dwc3
     #Allow access to memory hotplug device attributes
     chown system system /sys/kernel/mem-offline/anon_migrate
 
@@ -139,7 +139,7 @@ on init && property:ro.boot.mode=charger
 
 on property:init.svc.vendor.charger=running
     start vendor.power_off_alarm
-    setprop sys.usb.controller a600000.dwc3
+    setprop sys.usb.controller 4e00000.dwc3
     setprop sys.usb.configfs 1
 
 service vendor.lowi /vendor/bin/lowirpcd
