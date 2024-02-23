@@ -66,7 +66,7 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/media_holi/video_system_specs.json': blob_fixup()
         .regex_replace('"max_retry_alloc_output_timeout": 2000,', '"max_retry_alloc_output_timeout": 0,'),
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
-        .regex_replace('IGNORED_IRQ=27,23,38$', 'IGNORED_IRQ=27,23,38,115,332'),
+        .regex_replace('IGNORED_IRQ=19,21,38$', 'IGNORED_IRQ=19,21,38,209,218'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
