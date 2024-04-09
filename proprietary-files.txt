@@ -276,7 +276,7 @@ vendor/lib64/libdpmqmihal.so
 
 # Dolby Atmos - from OnePlus 9RT MT2111_13.1.0.592(EX01)
 odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service|7951f0ede5108f0080bb8abb18651058db9e46ae
-odm/etc/dolby/multimedia_dolby_dax_default.xml|be49c4cde1bc41f67fbfa2c49ba6d8f4e40eb8dc
+odm/etc/dolby/multimedia_dolby_dax_default.xml|885abbd34100dfdfb7a798449f35670a8e661a14
 odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc|5da96cf855061860f27dff6399505f8d1f1daeee
 odm/etc/vintf/manifest/manifest_dax_dolby_v3_6.xml|c4704e5bc4da7cdf291c79389f379c8355eaf730
 odm/etc/audio_effects.xml|35cb765c9acbc16c1c75552dc6cc03ad6f89c0f8
