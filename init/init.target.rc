@@ -97,24 +97,6 @@ on early-boot
 
 on boot
     write /dev/cpuset/audio-app/cpus 1-2
-    chown system /sys/devices/platform/soc/990000.i2c/i2c-0/0-0049/trusted_touch_enable
-    chmod 0660 /sys/devices/platform/soc/990000.i2c/i2c-0/0-0049/trusted_touch_enable
-    chown system /sys/devices/platform/soc/990000.i2c/i2c-0/0-0038/trusted_touch_enable
-    chmod 0660 /sys/devices/platform/soc/990000.i2c/i2c-0/0-0038/trusted_touch_enable
-    chown system /sys/devices/platform/soc/988000.i2c/i2c-1/1-0038/trusted_touch_enable
-    chmod 0660 /sys/devices/platform/soc/988000.i2c/i2c-1/1-0038/trusted_touch_enable
-    chown system /sys/devices/platform/soc/990000.i2c/i2c-0/0-0049/trusted_touch_event
-    chmod 0660 /sys/devices/platform/soc/990000.i2c/i2c-0/0-0049/trusted_touch_event
-    chown system /sys/devices/platform/soc/990000.i2c/i2c-0/0-0038/trusted_touch_event
-    chmod 0660 /sys/devices/platform/soc/990000.i2c/i2c-0/0-0038/trusted_touch_event
-    chown system /sys/devices/platform/soc/988000.i2c/i2c-1/1-0038/trusted_touch_event
-    chmod 0660 /sys/devices/platform/soc/988000.i2c/i2c-1/1-0038/trusted_touch_event
-    chown system /sys/devices/platform/soc/a94000.i2c/i2c-2/2-0062/trusted_touch_enable
-    chmod 0660 /sys/devices/platform/soc/a94000.i2c/i2c-2/2-0062/trusted_touch_enable
-    chown system /sys/devices/platform/soc/a94000.i2c/i2c-2/2-0062/trusted_touch_event
-    chmod 0660 /sys/devices/platform/soc/a94000.i2c/i2c-2/2-0062/trusted_touch_event
-    chown system /sys/devices/system/cpu/hyp_core_ctl/enable
-    chown system /sys/devices/system/cpu/hyp_core_ctl/hcc_min_freq
     #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
@@ -125,8 +107,6 @@ on boot
     #Load WLAN driver
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ qca_cld3_wlan qca_cld3_qca6390
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki qca_cld3_wlan qca_cld3_qca6390
-    #Allow access to memory hotplug device attributes
-    chown system system /sys/kernel/mem-offline/anon_migrate
 
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
