@@ -585,8 +585,6 @@ vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
 # Perf
-odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
@@ -607,6 +605,13 @@ vendor/lib64/libperfioctl.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
+
+# Perf (OPLUS)
+odm/bin/hw/vendor-oplus-hardware-performance-V1-service
+odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc
+odm/etc/vintf/manifest/manifest_performance_aidl.xml
+odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
 
 # Power-off alarm (system) - from LE2125 13.1.0.593(EX01)
 product/app/PowerOffAlarm/PowerOffAlarm.apk|5928b0a09b559a33f08ad2f04603a5c70fd3493b|6b8aa2a6b6feaa2da0f45be0a9a8147f46f10f50
