@@ -565,7 +565,6 @@ vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/init.qti.media.sh
 vendor/etc/init/init.qti.media.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
-vendor/etc/video_system_specs.json
 vendor/etc/media_blair/video_system_specs.json
 vendor/etc/media_blair/video_system_specs.json
 vendor/etc/media_blair_lite/video_system_specs.json
@@ -587,6 +586,7 @@ vendor/etc/media_profiles_blair.xml
 vendor/etc/media_profiles_blair_lite.xml
 vendor/etc/media_profiles_holi.xml
 vendor/etc/media_profiles_vendor.xml
+vendor/etc/video_system_specs.json
 vendor/lib/libqcodec2_base.so
 vendor/lib/libqcodec2_basecodec.so
 vendor/lib/libqcodec2_core.so
@@ -642,7 +642,10 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
-# Perf (Oplus)
+# Performance (Oplus)
+odm/bin/hw/vendor-oplus-hardware-performance-V1-service
+odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc
+odm/etc/vintf/manifest/manifest_performance_aidl.xml
 odm/lib64/liboplus-uah-client.so
 odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so
