@@ -134,6 +134,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q libcamera_metadata_shim.so "${2}" || "${PATCHELF}" --add-needed libcamera_metadata_shim.so "${2}"
             ;;
+        odm/lib64/libwvhidl.so|odm/lib64/mediadrm/libwvdrmengine.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
+            ;;
         *)
             return 1
             ;;
