@@ -37,6 +37,10 @@ on boot
     chown system system /sys/kernel/oplus_display/power_status
     chown system system /sys/kernel/oplus_display/video
 
+    # OTG
+    chown system system /sys/class/power_supply/usb/otg_switch
+    chown system system /sys/class/oplus_chg/usb/otg_switch
+
     # Sensors
     chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
 
@@ -66,6 +70,10 @@ on property:sys.boot_completed=1
 
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
+
+    # OTG
+    write /sys/class/power_supply/usb/otg_switch 1
+    write /sys/class/oplus_chg/usb/otg_switch 1
 
 on property:vendor.post_boot.parsed=1
     # IRQ Tuning
