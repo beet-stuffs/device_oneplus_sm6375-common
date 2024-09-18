@@ -15,6 +15,7 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
+        "1324800",
         "1651200",
         "691200"
       ],
@@ -171,6 +172,7 @@
       "Values": [
         "840000000",
         "650000000",
+        "490000000",
         "266000000"
       ],
       "ResetOnInit": true
@@ -361,7 +363,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "9999999"
+      "Value": "1324800"
     },
     {
       "PowerHint": "INTERACTION",
@@ -374,6 +376,12 @@
       "Node": "UclampTALatency",
       "Duration": 0,
       "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "GPUMinFreq",
+      "Duration": 0,
+      "Value": "490000000"
     },
     {
       "PowerHint": "INTERACTION",
