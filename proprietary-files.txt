@@ -586,6 +586,17 @@ odm/etc/vintf/manifest/manifest_performance_aidl.xml
 odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
 
+# Project (Oplus)
+odm/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service
+odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc
+odm/etc/vintf/manifest/manifest_oplus_stability_project_aidl.xml
+odm/lib/vendor.oplus.hardware.stability.oplus_project@1.0.so
+odm/lib64/vendor.oplus.hardware.stability.oplus_project@1.0.so
+odm/lib/vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform.so
+vendor/lib/vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform.so;MODULE_SUFFIX=_vendor
+
 # Power-off alarm (system) - from LE2125 13.1.0.593(EX01)
 product/app/PowerOffAlarm/PowerOffAlarm.apk|5928b0a09b559a33f08ad2f04603a5c70fd3493b|6b8aa2a6b6feaa2da0f45be0a9a8147f46f10f50
 system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar|1cef4c9f6193022d8410e21513f36687cab0e0f2
