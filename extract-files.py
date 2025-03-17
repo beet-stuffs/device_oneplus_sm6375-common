@@ -59,7 +59,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hidl.base@1.0.so', 'libhidlbase.so')
         .add_needed('libbinder_shim.so')
         .add_needed('libinput_shim.so'),
-    ('vendor/etc/media_blair/video_system_specs.json', 'vendor/etc/media_holi/video_system_specs.json'): blob_fixup()
+    'vendor/etc/media_holi/video_system_specs.json': blob_fixup()
         .regex_replace('"max_retry_alloc_output_timeout": 10000,', '"max_retry_alloc_output_timeout": 0,'),
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
         .regex_replace('IGNORED_IRQ=19,21,38$', 'IGNORED_IRQ=19,21,38,209,218'),
@@ -91,7 +91,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libcodec2_hidl_plugin.so', 'libcodec2_hidl_plugin_sp.so')
         .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk_sp.so'),
     'odm/lib64/libui_sp.so': blob_fixup()
-        .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V5-ndk.so')
+        .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V6-ndk.so')
         .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so'),
     # Dolby END
 }  # fmt: skip
