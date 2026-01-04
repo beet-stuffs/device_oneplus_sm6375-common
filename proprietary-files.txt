@@ -303,26 +303,6 @@ odm/lib64/libdlbdsservice_v3_6.so|08ae454ff029791ba436f750ca6c717cb6d7bf36|a8105
 odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so|5b5f4b383c03a6aaa759b1cc7f6f0aea7d1f6ba0
 odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so|e62f04117fead61eea7f2593e7ccbb565436a0ee
 
-# Dolby Media - from OnePlus 11 CPH2447_15.0.0.401(EX01)
-odm/bin/hw/vendor.dolby_sp.hardware.dmssp@2.0-service|1240cecce2ad8943c2aa5b96381ebeb5e1bac43d
-odm/bin/hw/vendor.dolby_sp.media.c2@1.0-service|cafd800a4e83afa206347886cfed48cdb50cb80c|474935cbe8584567aa932f4284409e81e60eaae2
-odm/etc/init/vendor.dolby.media.c2@1.0-service.rc|6af989419070ea6b4646f47ab78849d7549abda3
-odm/etc/init/vendor.dolby_sp.hardware.dmssp@2.0-service.rc|94c85fbfc93527395fcc1bb7bfb58734f245d4f3
-odm/etc/vintf/manifest/vendor.dolby.hardware.dms.xml|dc9ebef89624d524fe76724e9a220b5d2affe62b
-odm/lib64/libcodec2_hidl@1.0.so:odm/lib64/libcodec2_hidl@1.0_sp.so;FIX_SONAME|4b662f2ecc5c66874f93407c48f492b2d09ce47c|8d18abc58bc31d65c74ba217f6b6370cee733e1c
-odm/lib64/libcodec2_hidl_plugin.so:odm/lib64/libcodec2_hidl_plugin_sp.so;FIX_SONAME|2dbcfda2c7d867edf106fc72d02b11c719f676fb|0488118efefd3426416e53851d2b3093d9e64dbe
-odm/lib64/libcodec2_soft_ac4dec_sp.so|b22d228a84b1698bca8c95aaf67324f47a8262bb|c49695f1b4c2f88d133d67c4acc22c341aeb3a80
-odm/lib64/libcodec2_soft_common.so:odm/lib64/libcodec2_soft_common_sp.so;FIX_SONAME|5cce54ffe4e82ca9d6ca6606ac66b599ac28ea71|4f12770ce036ce5e6cd2424fafe16614ed676c61
-odm/lib64/libcodec2_soft_ddpdec_sp.so|c2034f16911dd7ae4c58c4e05c4f54b4293faef3|d897c315006009d4c7405488f246f4de4a81b87d
-odm/lib64/libcodec2_store_dolby_sp.so|4b9e3bd2fd8ffd49d50b81926cb89f7916c7a212|f1a59b096f7be5a2f09d0648742ec77c46dba06d
-odm/lib64/libdapparamstorage_sp.so|f275e0f47c40b72890ee1cde373e60b4b2ffd711
-odm/lib64/libdeccfg_sp.so|e7f27c1009baecf84835deee1a7e296c5dc3f4e6
-odm/lib64/libdlbdsservice_sp.so|7c1847cce3d0c7f4ce5658090d752e493e8570ea|42b02b3986750dd1bb54504ffbd69e2cff0c6d11
-odm/lib64/libui.so:odm/lib64/libui_sp.so;FIX_SONAME|88b8584db2fa78d0ec06d89f623f8321721051e1|ff7cdbb549a1a7972f37a99f4581136048b45339
-odm/lib64/vendor.dolby_sp.hardware.dmssp@2.0-impl.so|b51e6a885a738023ce6ec97b702d6733b70d0a15
-odm/lib64/vendor.dolby_sp.hardware.dmssp@2.0.so|2173d68717cbcdaab98e1cf15a0d410ea00d0271
-vendor/lib64/libcodec2_vndk.so:odm/lib64/libcodec2_vndk_sp.so;FIX_SONAME|d9d17fd476ee2c3593b0f123af957132e34211af|156d0dc125c22b48308143e6566f747b5a1270bc
-
 # DRM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecomd
@@ -1134,7 +1114,6 @@ system_ext/lib64/libwfduibcsrcinterface.so|0e32acc87c8518e8ebb44f6ef341a2e278e1e
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so|2b2563450ad6a8d46d5648b97f63f87c5d9983ca
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so|58cd9358df40aa16ddf0e603b736c58588623b9e
 system_ext/priv-app/WfdService/WfdService.apk|b8a1d9f83804d274fab6e09e0607082801207f60
->>>>>>> c33b47b (sm8350-common: Update WFD system blobs from dada OS2.0.217.0.WOCMIXM)
 
 # WiFi Display (vendor)
 vendor/bin/wfdhdcphalservice
