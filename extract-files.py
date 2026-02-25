@@ -20,7 +20,6 @@ from extract_utils.main import (
 namespace_imports = [
     'device/oneplus/sm6375-common',
     'hardware/oplus',
-    'hardware/pixelworks/interfaces',
     'hardware/qcom-caf/sm8350',
     'hardware/qcom-caf/wlan',
     'vendor/qcom/opensource/commonsys-intf/display',
@@ -52,20 +51,13 @@ blob_fixups: blob_fixups_user_type = {
     ('odm/lib64/mediadrm/libwvdrmengine.so', 'odm/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
     'product/app/PowerOffAlarm/PowerOffAlarm.apk': blob_fixup()
-        .apktool_patch('blob-patches/PowerOffAlarm.patch'),
+        .apktool_patch('blob-patches/PowerOffAlarm.patch', '-s'),
     'product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml': blob_fixup()
         .regex_replace('/my_product', '/product'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .add_needed('libinput_shim.so'),
     'vendor/etc/media_holi/video_system_specs.json': blob_fixup()
         .regex_replace('"max_retry_alloc_output_timeout": 10000,', '"max_retry_alloc_output_timeout": 0,'),
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
         .regex_replace('IGNORED_IRQ=19,21,38$', 'IGNORED_IRQ=19,21,38,209,218'),
-    (
-        'vendor/lib64/libdpps.so',
-        'vendor/lib64/libsnapdragoncolor-manager.so',
-    ): blob_fixup()
-        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/etc/qcril_database/upgrade/config/*.sql': blob_fixup()
         .regex_replace('def_val="1" WHERE property="persist.vendor.radio.poweron_opt"', 'def_val="0" WHERE property="persist.vendor.radio.poweron_opt"'),
 }  # fmt: skip

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2025 The LineageOS Project
+# Copyright (C) 2021-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -37,7 +37,6 @@ TARGET_2ND_CPU_VARIANT := cortex-a55
 
 # Audio
 AUDIO_FEATURE_ENABLED_DLKM := true
-AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 AUDIO_FEATURE_ENABLED_GEF_SUPPORT := true
 AUDIO_FEATURE_ENABLED_GKI := true
@@ -51,9 +50,6 @@ BOARD_USES_ALSA_AUDIO := true
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := holi
 
-# Camera
-TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
-
 # Display
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 
@@ -65,6 +61,14 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    hardware/oplus/vintf/device_framework_matrix.xml \
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
+DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+ODM_MANIFEST_FILES := $(COMMON_PATH)/manifest_odm.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 3
@@ -91,6 +95,13 @@ TARGET_KERNEL_SOURCE := kernel/oneplus/sm6375
 TARGET_KERNEL_CONFIG := vendor/holi-qgki_defconfig
 TARGET_KERNEL_NO_GCC := true
 
+# Kernel modules
+BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
+BOOT_KERNEL_MODULES := $(strip $(shell cat $(COMMON_PATH)/modules.include.recovery))
+TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_wlan.ko
+
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := holi
@@ -114,6 +125,9 @@ $(foreach p, $(call to-upper, $(BOARD_ONEPLUS_DYNAMIC_PARTITIONS_PARTITION_LIST)
     $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 104857600) \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
+
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
@@ -126,7 +140,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security
-BOOT_SECURITY_PATCH := 2025-04-01
+BOOT_SECURITY_PATCH := 2025-01-01
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # SEPolicy
