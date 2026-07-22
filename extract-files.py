@@ -54,8 +54,6 @@ blob_fixups: blob_fixups_user_type = {
         .apktool_patch('blob-patches/PowerOffAlarm.patch'),
     'product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml': blob_fixup()
         .regex_replace('/my_product', '/product'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .add_needed('libinput_shim.so'),
     ('vendor/etc/media_blair/video_system_specs.json', 'vendor/etc/media_holi/video_system_specs.json'): blob_fixup()
         .regex_replace('"max_retry_alloc_output_timeout": 10000,', '"max_retry_alloc_output_timeout": 0,'),
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
