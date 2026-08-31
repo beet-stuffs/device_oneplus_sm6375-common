@@ -271,6 +271,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "PMQoSCpuDmaLatency",
+      "Path": "/dev/cpu_dma_latency",
+      "Values": [
+        "44",
+        "100"
+      ],
+      "HoldFd": true
+    },
+    {
       "Name": "DisplayWakeup",
       "Path": "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/early_wakeup",
       "Values": [
@@ -420,6 +429,12 @@
     },
     {
       "PowerHint": "LAUNCH",
+      "Node": "PMQoSCpuDmaLatency",
+      "Duration": 3000,
+      "Value": "44"
+    },
+    {
+      "PowerHint": "LAUNCH",
       "Node": "CPUBWHystTriggerCount",
       "Duration": 3000,
       "Value": "0"
@@ -489,6 +504,12 @@
       "Node": "GPUMaxFreq",
       "Duration": 0,
       "Value": "585000000"
+    },
+    {
+      "PowerHint": "ML_ACC",
+      "Node": "PMQoSCpuDmaLatency",
+      "Duration": 2000,
+      "Value": "44"
     },
     {
       "PowerHint": "DISPLAY_UPDATE_IMMINENT",
