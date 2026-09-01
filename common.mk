@@ -218,7 +218,6 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
-$(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-custom
@@ -254,6 +253,18 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/power/config/holi/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 $(call soong_config_set,qtipower,tap_to_wake_node,/proc/touchpanel/double_tap_enable)
+
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    alarm \
+    audio \
+    av \
+    bt \
+    display \
+    gps \
+    overlay \
+    perf \
+    wfd
 
 # Sensors
 PRODUCT_PACKAGES += \
